@@ -1,0 +1,99 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Pnekey-Q 
+0
+0 0 lijinpeng521/mofang
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
+mofang/mofang.html
+@lijinpeng521 lijinpeng521 提交文件
+1583bbd on 7 Mar
+69 lines (67 sloc)  1.21 KB
+    
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title></title>
+	<style>
+		.main{
+			width: 400px;
+			height: 400px;
+			border: 3px solid #ccc;
+			position: relative;
+			margin: 100px auto;
+			perspective: 8000px;/*透视的角度*/			
+			transform-style: preserve-3d;/*转换为3D*/
+			}
+		.main div{
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			}
+		.div3{
+			background: blue;
+			transform-origin: left;
+			transform:  rotateY(90deg);
+		}
+		.div4{
+			background: blue;
+			transform-origin: right;
+			transform:  rotateY(-90deg);
+		}
+		.div2{
+			background: green;
+			transform-origin: top;
+			transform:  rotateX(-90deg);
+		}	
+		.div5{
+			background: orange;
+			transform-origin: bottom;
+			transform:  rotateX(90deg);
+		}
+		.div1{
+			background: black;
+			
+		}
+		.div6{
+			background: yellow;
+			transform: translateZ(-200px);
+			
+		}
+		.main:hover{
+			transform-origin: 50% 50%;
+			transition:  all 50s ;
+			transform:  rotateX(4000deg)
+			rotateY(4000deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+		<div class="div4"></div>
+		<div class="div5"></div>
+		<div class="div6"></div>
+	</div>
+</body>
+</html>
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
